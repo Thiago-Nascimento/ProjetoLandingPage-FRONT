@@ -19,7 +19,8 @@ header {
     background-color: #F9003D;
     height: 80px;
     position: fixed;
-    width: 100%;
+    width: 100vw;
+    z-index: 99;
 }
 
 .conteudo-header {
