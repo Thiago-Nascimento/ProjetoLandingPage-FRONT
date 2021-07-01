@@ -1,0 +1,25 @@
+.container-grid {
+    width: 90%;
+}
+
+.banner {
+    background-image: url(../imagens/imagem-fundo-ranking.jpg);
+}
+
+.imagem-sobre {
+    width: 100%;
+}
+
+.texto-sobre {
+    width: 100%;
+    height: unset;
+}
+
+.conteudo-endereco {
+    height: unset;
+}
+
+.mapa {
+    width: 100%;
+    margin-top: 30px;
+}
