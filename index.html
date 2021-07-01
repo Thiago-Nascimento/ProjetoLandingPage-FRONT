@@ -8,16 +8,20 @@
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" media="screen and (max-width: 1200px)" href="css/layout_tablet.css">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/layout_smartphone.css">
+    <script src="https://kit.fontawesome.com/fa6968a204.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="container-grid conteudo-header">
-            <nav class="menu-header">
+            <nav id="menu-header" class="menu-header">
                 <a href="" title="Inicio da página">Inicio</a>
                 <a href="">Sobre</a>
                 <a href="">Desafios</a>
                 <a href="">Endereço</a>
             </nav>
+            <a href="javascript: void(0)" onclick="mostrarMenu()">
+                <i id="icone-menu" class="fas fa-bars"></i>
+            </a>
         </div>
     </header>
     <main>
@@ -73,5 +77,23 @@
     <footer>
         <span>Copyright &copy; 2021 - Escola Senai de Informática</span>
     </footer>
+    <script>
+        function mostrarMenu() {
+            var menu = document.getElementById("menu-header");
+            var icone = document.getElementById("icone-menu");
+
+            if(menu.style.display == "none") {
+                menu.style.display = "flex";
+                icone.classList.remove("fa-bars");
+                icone.classList.add("fa-times");
+                // Mudar para times
+            } else {
+                menu.style.display = "none";
+                icone.classList.remove("fa-times");
+                icone.classList.add("fa-bars");
+                // Mudar para bars
+            }
+        }
+    </script>
 </body>
 </html>

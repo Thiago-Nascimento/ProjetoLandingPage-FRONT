@@ -2,6 +2,22 @@
     width: 90%;
 }
 
+.menu-header {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.90);
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    height: 300px;
+}
+
+#icone-menu {
+    color: white;
+    font-size: 30px;
+}
+
 .banner {
     background-image: url(../imagens/imagem-fundo-ranking.jpg);
 }
